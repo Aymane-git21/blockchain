@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Page</title>
+    <title>ECDSA Encryption</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,16 +51,15 @@
 </head>
 <body>
     <div class="container">
-        <p><strong>Enter the text to get its HASH:</strong></p>
-        <input type="text" id="inputBox" placeholder="Enter text here">
-        <button onclick="displayText()">Submit</button>
-        <div class="output" id="outputText"></div>
-        <div class="link"></div>
+        <p><strong>Enter the text to encrypt with ECDSA:</strong></p>
+        <input type="text" id="ecdsaInputBox" placeholder="Enter text here">
+        <button onclick="encryptText()">Encrypt</button>
+        <div class="output" id="ecdsaOutputText"></div>
+        <div class="link">
+            <a href="index.html">Go back to Hashing</a>
+        </div>
     </div>
-    <div class="link">
-        <a href="ecdsa.html">Go to ECDSA Encryption</a>
-    </div>
-    <!-- Link to the external JavaScript file -->
-    <script src="script.js"></script>
+
+    <script src="ecdsa.js"></script>
 </body>
 </html>
